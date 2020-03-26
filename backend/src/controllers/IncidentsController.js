@@ -5,9 +5,27 @@ const IncidentsController = {
   async index(req, res) {
     debug("be-the-hero:incidents-controller")("listing the incidents");
 
-    const incidents = await connection("incidents").select("*");
+    const { page = 1 } = req.query;
 
-    return res.status(200).json(incidents);
+    const [count] = await connection("incidents").count();
+
+    const incidents = await connection("incidents")
+      .join("ongs", "incidents.ong_id", "=", "ongs.id")
+      .limit(5)
+      .offset((page - 1) * 5)
+      .select(
+        "incidents.*",
+        "ongs.name",
+        "ongs.email",
+        "ongs.whatsapp",
+        "ongs.city",
+        "ongs.uf"
+      );
+
+    return res
+      .set("X-Total-Count", count["count(*)"])
+      .status(200)
+      .json(incidents);
   },
   async store(req, res) {
     debug("be-the-hero:incidents-controller")("storing an incident");
