@@ -1,0 +1,103 @@
+.Profile__container {
+  margin: 32px auto;
+  max-width: 1180px;
+  padding: 0 30px;
+  width: 100%;
+}
+
+.Profile__header {
+  align-items: center;
+  display: flex;
+}
+
+.Profile__logo {
+  height: 64px;
+}
+
+.Profile__brand {
+  font-size: 20px;
+  margin-left: 24px;
+}
+
+.Profile__button {
+  background: #e02041;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  height: 60px;
+  line-height: 60px;
+  margin-left: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: filter 0.2s;
+  width: 260px;
+}
+
+.Profile__button:hover {
+  filter: brightness(90%);
+}
+
+.Profile__logout {
+  background: transparent;
+  border: 1px solid #dcdce6;
+  border-radius: 4px;
+  height: 60px;
+  margin-left: 16px;
+  transition: border-color 0.2s;
+  width: 60px;
+}
+
+.Profile__logout:hover {
+  border-color: #999;
+}
+
+.Profile__title {
+  margin-bottom: 24px;
+  margin-top: 80px;
+}
+
+.Profile__incidents {
+  display: grid;
+  list-style: none;
+  grid-gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Profile__incident {
+  background: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  position: relative;
+}
+
+.Profile__incident__button {
+  border: 0;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+}
+
+.Profile__incident__button:hover {
+  opacity: 0.8;
+}
+
+.Profile__incident__label {
+  color: #41414d;
+  display: block;
+  margin-bottom: 16px;
+}
+
+ul li p + .Profile__incident__label {
+  margin-top: 32px;
+}
+
+.Profile__incident__title,
+.Profile__incident__description,
+.Profile__incident__value {
+  color: #737380;
+  font-size: 16px;
+  line-height: 21px;
+}

@@ -1,0 +1,39 @@
+.Logon__container {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1120px;
+  width: 100%;
+}
+
+.Logon__form {
+  margin-right: 30px;
+  max-width: 350px;
+  width: 100%;
+}
+
+.Logon__form__content {
+  margin-top: 100px;
+}
+
+.Logon__form__title {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.Logon__form__link {
+  align-items: center;
+  color: #41414d;
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 40px;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.Logon__form__link:hover {
+  opacity: 0.8;
+}
