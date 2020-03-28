@@ -13,6 +13,20 @@
 
 :globe_with_meridians: Projeto resultado da Semana OmniStack 11 (Be The Hero)
 
+## Preview
+
+### Frontend
+
+<img src="./.github/frontend1.png" />
+<img src="./.github/frontend2.png" />
+<img src="./.github/frontend3.png" />
+<img src="./.github/frontend4.png" />
+
+### Mobile
+
+<img src="./.github/mobile1.jpg" width="250" />
+<img src="./.github/mobile2.jpg" width="250" />
+
 ## :computer: Tecnologias
 
 - [Node.js](https://nodejs.org/en/)
