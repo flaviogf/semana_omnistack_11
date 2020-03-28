@@ -24,8 +24,10 @@
 
 ### Mobile
 
+<div style="display: flex">
 <img src="./.github/mobile1.jpg" width="250" />
 <img src="./.github/mobile2.jpg" width="250" />
+</div>
 
 ## :computer: Tecnologias
 
