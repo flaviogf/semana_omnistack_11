@@ -23,21 +23,35 @@
 
 ### Backend
 
-````sh
+```sh
 cd backend
-````
+```
 
-````sh
+```sh
 yarn
-````
+```
 
-````sh
+```sh
 yarn knex migrate:latest
-````
+```
 
-````sh
+```sh
 yarn start
-````
+```
+
+### Frontend
+
+```sh
+cd frontend
+```
+
+```sh
+yarn
+```
+
+```sh
+yarn start
+```
 
 ## :memo: Licença
 
