@@ -1,6 +1,6 @@
-import crypto from "crypto";
 import debug from "debug";
 import connection from "../database/connection";
+import guid from "../lib/guid";
 
 const OngController = {
   async index(req, res) {
@@ -15,7 +15,7 @@ const OngController = {
 
     const { name, email, whatsapp, city, uf } = req.body;
 
-    const id = crypto.randomBytes(4).toString("hex");
+    const id = guid();
 
     await connection("ongs").insert({
       id,
